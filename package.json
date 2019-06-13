@@ -1,7 +1,7 @@
 {
   "name": "hola-webpack",
   "version": "1.0.0",
-  "description": "Demo para Webpack y sus plugins y loaders",
+  "description": "Demo para Webpack, sus plugins y loaders",
   "main": "app.js",
   "dependencies": {},
   "devDependencies": {
@@ -16,7 +16,8 @@
     "webpack-cli": "^3.3.4"
   },
   "scripts": {
-    "build": "webpack -d"
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development"
   },
   "keywords": [],
   "author": "Dario jose Zubaray",
