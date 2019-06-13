@@ -1,10 +1,13 @@
 {
   "name": "hola-webpack",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demo para Webpack y sus plugins y loaders",
   "main": "app.js",
   "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
     "css-loader": "^3.0.0",
     "html-webpack-plugin": "^3.2.0",
     "mini-css-extract-plugin": "^0.7.0",
@@ -13,10 +16,9 @@
     "webpack-cli": "^3.3.4"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -d"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dario jose Zubaray",
   "license": "ISC"
 }
