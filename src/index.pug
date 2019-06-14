@@ -14,15 +14,13 @@ body
       a(href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox") Flexbox
 
 
-    div.field
-      div.control
-        input.input(type="text" placeholder="Input")
+    div.field: div.control
+        input.input(type="text" placeholder="Soy un input de texto...")
 
-    div.field
-      p.control
-        span.select
-          select
-            option Select dropdown
+    div.field: p.control: span.select: select
+            option &lt; Seleccione por favor &gt;
+            option opcion 1
+            option opcion 2
 
     div.buttons
       a.button.is-primary#btn-show-alert Primary
