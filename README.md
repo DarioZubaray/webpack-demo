@@ -8,6 +8,7 @@
 - babel-core, babel-loader, babel-preset-env
 - node-sass, sass-loader
 - ts-loader
+- pug-loader
 
 ## Project setup
 ```
