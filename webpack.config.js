@@ -15,7 +15,7 @@ module.exports = {
       hash: true,
       title: 'Mi Asombrosa aplicacion',
       myPageHeader: 'hola webpack',
-      template: './src/index.html',
+      template: './src/index.pug',
       filename: './index.html' //relative to root of the application
     }),
     new MiniCssExtractPlugin({
@@ -56,6 +56,10 @@ module.exports = {
               }
             }
           ]
+      },
+      {
+        test: /\.pug$/,
+        use: ['pug-loader']
       }
     ]
   }
