@@ -1,6 +1,7 @@
 # Hola Webpack
 
 - webpack, webpack-cli
+- clean-webpack-plugin
 - html-webpack-plugin
 - css-loader, style-loader
 - mini-css-extract-plugin
