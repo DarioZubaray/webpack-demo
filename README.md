@@ -5,6 +5,7 @@
 - css-loader, style-loader
 - mini-css-extract-plugin
 - babel-core, babel-loader, babel-preset-env
+- node-sass, sass-loader
 
 ## Project setup
 ```

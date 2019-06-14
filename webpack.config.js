@@ -17,7 +17,7 @@ module.exports = {
       filename: './index.html' //relative to root of the application
     }),
     new MiniCssExtractPlugin({
-      filename: 'style.css',
+      filename: 'style.bundle.css',
     })
  ],
   module: {
@@ -31,7 +31,23 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use:  [  'style-loader', MiniCssExtractPlugin.loader, 'css-loader']
+        use:  [ 'style-loader', MiniCssExtractPlugin.loader, 'css-loader']
+      },
+      {
+        test: /\.scss$/,
+        use: [
+            MiniCssExtractPlugin.loader,
+            {
+              loader: 'css-loader'
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                sourceMap: true,
+                // options...
+              }
+            }
+          ]
       }
     ]
   }

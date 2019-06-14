@@ -1,4 +1,4 @@
 import { mostrarMensaje } from './message'
-import './style.css';
+import './style.scss';
 
 document.getElementById('btn-show-alert').addEventListener('click', mostrarMensaje)
